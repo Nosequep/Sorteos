@@ -13,4 +13,5 @@ jobs:
     - name: Setup Node.js environment
       run: npm install
     - name: Super linter
-      uses: github/super-linter@v4.8.4
+      working-directory: ./prueba.py
+    - uses: github/super-linter@v4.8.4
