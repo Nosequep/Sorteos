@@ -35,7 +35,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - uses: satackey/action-js-inline@v0.0.2
+    - name: Execute JavaScript inline
+      uses: satackey/action-js-inline@v0.0.2
+      
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
       with:
