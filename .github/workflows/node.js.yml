@@ -16,6 +16,9 @@ jobs:
     
     steps:
       - uses: actions/checkout@v2
+      - name: Test Javascript Hello Action
+        uses: adeloyedeji/github-actions-hello@v1.0
+        
       - name: Iniciar servidor
         uses: actions/setup-node@v2
         with:
@@ -35,8 +38,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Execute JavaScript inline
-      uses: satackey/action-js-inline@v0.0.2
       
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
