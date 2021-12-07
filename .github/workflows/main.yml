@@ -4,17 +4,17 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: yarn
-    - name: Run tests
-      run: yarn test
-    - uses: actions/setup-node@v2.5.0
-    - name: Setup Node.js environment
-      run: npm install
+    #- uses: actions/checkout@v2
+    #- name: Install modules
+    # run: yarn
+    #- name: Run tests
+    #  run: yarn test
+    #- uses: actions/setup-node@v2.5.0
+    #- name: Setup Node.js environment
+      #run: npm install
       
     - name: Super linter
-      working-directory: ./pruebas
+      #working-directory: ./pruebas
       run: github/super-linter@v4.8.4
   
 
